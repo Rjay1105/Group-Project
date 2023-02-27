@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      #search-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        width: 500px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      #previous-searches {
+        margin-top: 50px;
+        text-align: center;
+      }
+      #previous-searches h2 {
+        margin-bottom: 20px;
+      }
+      .search-term {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+      .popular-searches {
+        margin-top: 50px;
+        text-align: center;
+      }
+      .popular-searches h2 {
+        margin-bottom: 20px;
+      }
+      .search-term-popular {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        color: #333;
+        cursor: pointer;
+      }
+      .search-term-popular:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Logo -->
+    <img src="logo.png" alt="Company Logo" width="200px">
+    <h1>Search Page</h1>
+    <form id="search-form" action="/search" method="GET">
+      <label for="search">Search:</label>
+      <input type="text" id="search" name="search" required>
+      <button type="submit">Search</button>
+    </form>
+    <div id="previous-searches">
+      <h2>Previous Searches:</h2>
+      <div class="search-term">Search Term 1</div>
+      <div class="search-term">Search Term 2</div>
+      <div class="search-term">Search Term 3</div>
+    </div>
+    <div class="popular-searches">
+      <h2>Popular Searches:</h2>
+      <div class="search-term-popular">Popular Search Term 1</div>
+      <div class="search-term-popular">Popular Search Term 2</div>
+      <div class
