@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Page</title>
+	<link rel="stylesheet" href="search.css">
+  </head>
+  <body>
+    <!-- Logo -->
+	<div class="header">
+	  <img src="logo.png" alt="Company Logo" width="200px">
+	  <h1>Search Page</h1>
+	</div>
+	
+	<div class="container">
+      <form id="search-form" action="/search" method="GET">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search" required>
+        <button type="submit">Search</button>
+      </form>
+      <div id="previous-searches">
+        <h2>Previous Searches:</h2>
+        <div class="search-term">Search Term 1</div>
+        <div class="search-term">Search Term 2</div>
+        <div class="search-term">Search Term 3</div>
+      </div>
+    
+	  <div class="popular-searches">
+        <h2>Popular Searches:</h2>
+        <div class="search-term">Popular Search Term 1</div>
+        <div class="search-term">Popular Search Term 2</div>
+      </div>
+	</div>
+	
+  </body>
+</html>
